@@ -23,6 +23,13 @@ public class Application {
 		return "Hello World";
 	}
 
+	
+	@RequestMapping("/failure")
+	public void failure() {
+
+		throw new RuntimeException("Application Exception");
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
