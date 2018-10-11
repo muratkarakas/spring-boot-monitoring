@@ -1,0 +1,10 @@
+management.endpoints.web.exposure.include: '*'
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name:   spring-boot-monitoring-sample-app  
+  datasource:
+    hikari:
+      pool-name: DEMO_POOL
